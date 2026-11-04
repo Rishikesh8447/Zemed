@@ -103,13 +103,13 @@ export function Hero() {
                 phoneWidth={275}
               />
 
-              {/* Bottom Floating Badge: anchored to bottom-right of phone container, within phone boundaries, balanced between content and bottom nav */}
+              {/* Bottom Floating Badge: floating at bottom-right, extending outside phone mockup right edge to match reference */}
               <div
                 id="hero-doctor-badge"
-                className="float-badge absolute bottom-8 sm:bottom-9 right-2 sm:right-2.5 max-w-[205px] sm:max-w-[215px] flex items-center gap-2 py-1.5 px-2.5 sm:py-2 sm:px-3 text-[0.74rem] sm:text-[0.78rem] shadow-lg border border-[rgba(11,43,52,0.08)] bg-white/95 backdrop-blur-sm z-20"
+                className="float-badge absolute bottom-8 sm:bottom-9 -right-3.5 sm:-right-8 whitespace-nowrap text-xs sm:text-[0.82rem] py-2 px-3 sm:py-2.5 sm:px-3.5 shadow-md z-20 flex items-center gap-2"
               >
                 <span className="text-sm sm:text-base flex-shrink-0 leading-none">🩺</span>
-                <span className="leading-tight text-[#0B2B34] font-semibold break-words">
+                <span className="font-semibold text-[#0B2B34]">
                   {t.hero.badgeDoctor.replace(/^🩺\s*/, '')}
                 </span>
               </div>

@@ -44,7 +44,11 @@ export const metadata: Metadata = {
     images: ['/assets/logo/zemed-logo.png'],
   },
   icons: {
-    icon: '/assets/logo/zemed-logo.png',
+    icon: [
+      { url: '/assets/logo/zemed-logo.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+    ],
+    shortcut: '/assets/logo/zemed-logo.png',
     apple: '/assets/logo/zemed-logo.png',
   },
 };
