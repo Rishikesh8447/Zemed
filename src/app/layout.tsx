@@ -18,12 +18,26 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Zemed Plus' }],
   creator: 'Zemed Plus',
-  metadataBase: new URL('https://zemedplus.com'),
+  metadataBase: new URL('https://www.zemed.in'),
+  alternates: {
+    canonical: 'https://www.zemed.in',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'Zemed Plus — Direct Appointments. Zero Waiting.',
     description:
       'Find a specialist, pick an open slot, and walk in already booked in Begusarai, Bihar. No calls, no waiting queues.',
-    url: 'https://zemedplus.com',
+    url: 'https://www.zemed.in',
     siteName: 'Zemed Plus',
     locale: 'en_IN',
     alternateLocale: ['hi_IN'],
